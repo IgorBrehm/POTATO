@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2050</width>
+    <height>1119</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">gridline-color: rgb(192, 255, 231);
+selection-color: rgb(218, 255, 202);
+background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCalendarWidget" name="to_date">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>200</y>
+      <width>431</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCalendarWidget QWidget { 
+	alternate-background-color: rgb(222, 222, 222);
+	
+}
+
+QCalendarWidget QToolButton {
+	height: 35px;
+  	width: 150px;
+  	color: white;
+  	font-size: 18px;
+  	icon-size: 36px, 36px;
+	icon-color: white;
+  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333);
+  }
+
+  QCalendarWidget QMenu {
+  	width: 150px;
+  	left: 20px;
+  	color: white;
+  	font-size: 18px;
+  	background-color: rgb(100, 100, 100);
+  }
+
+  QCalendarWidget QSpinBox { 
+  	width: 100px; 
+  	font-size:24px; 
+  	color: white; 
+  	background-color: rgb(167, 167, 167);
+  	selection-background-color: rgb(136, 136, 136);
+  	selection-color: rgb(255, 255, 255);
+  }</string>
+    </property>
+    <property name="maximumDate">
+     <date>
+      <year>2100</year>
+      <month>12</month>
+      <day>31</day>
+     </date>
+    </property>
+    <property name="horizontalHeaderFormat">
+     <enum>QCalendarWidget::ShortDayNames</enum>
+    </property>
+    <property name="verticalHeaderFormat">
+     <enum>QCalendarWidget::NoVerticalHeader</enum>
+    </property>
+    <property name="navigationBarVisible">
+     <bool>true</bool>
+    </property>
+    <property name="dateEditEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>150</y>
+      <width>551</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Light</family>
+      <pointsize>15</pointsize>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Selecione o início da data que deve ser apagada&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>150</y>
+      <width>491</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Light</family>
+      <pointsize>15</pointsize>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Selecione o fim da data que deve ser apagada&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_btn">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>880</y>
+      <width>191</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  background-color: white;
+  color: black; 
+  margin: 4px 2px;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid #ff6b6b;
+}
+
+QPushButton:hover:!pressed
+{
+background-color: #ff6b6b;
+color: white;
+font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Apagar Registros</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>1690</x>
+      <y>880</y>
+      <width>131</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  background-color: white;
+  color: black; 
+  border: none;
+  margin: 4px 2px;
+  text-align: center;
+  font-size: 18px;
+}
+
+QPushButton:hover:!pressed
+{
+background-color: #989898;
+color: white;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Voltar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cancel">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>880</y>
+      <width>181</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  background-color: white;
+  color: black; 
+  border: none;
+  margin: 4px 2px;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid #eb9e02;
+}
+
+QPushButton:hover:!pressed
+{
+background-color: #eb9e02;
+color: white;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Cancelar</string>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="from_date">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>200</y>
+      <width>441</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCalendarWidget QWidget { 
+	alternate-background-color: rgb(222, 222, 222);
+	
+}
+
+QCalendarWidget QToolButton {
+	height: 35px;
+  	width: 150px;
+  	color: white;
+  	font-size: 18px;
+  	icon-size: 36px, 36px;
+	icon-color: white;
+  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333);
+  }
+
+  QCalendarWidget QMenu {
+  	width: 150px;
+  	left: 20px;
+  	color: white;
+  	font-size: 18px;
+  	background-color: rgb(100, 100, 100);
+  }
+
+  QCalendarWidget QSpinBox { 
+  	width: 100px; 
+  	font-size:24px; 
+  	color: white; 
+  	background-color: rgb(167, 167, 167);
+  	selection-background-color: rgb(136, 136, 136);
+  	selection-color: rgb(255, 255, 255);
+  }
+
+QCalendarWidget QAbstractItemView:disabled 
+{ 
+color: rgb(64, 64, 64); 
+}</string>
+    </property>
+    <property name="maximumDate">
+     <date>
+      <year>2100</year>
+      <month>12</month>
+      <day>31</day>
+     </date>
+    </property>
+    <property name="horizontalHeaderFormat">
+     <enum>QCalendarWidget::ShortDayNames</enum>
+    </property>
+    <property name="verticalHeaderFormat">
+     <enum>QCalendarWidget::NoVerticalHeader</enum>
+    </property>
+    <property name="navigationBarVisible">
+     <bool>true</bool>
+    </property>
+    <property name="dateEditEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2050</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
