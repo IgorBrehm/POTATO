@@ -27,3 +27,8 @@ CREATE TABLE Compra (
   CONSTRAINT fk_compra_mes FOREIGN KEY (nome_mes, nome_ano) REFERENCES Mes (nome_mes, nome_ano)
     ON DELETE CASCADE
 );
+
+CREATE UNIQUE INDEX id
+  ON Venda (id);
+CREATE UNIQUE INDEX id
+  ON Compra (id);

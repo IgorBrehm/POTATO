@@ -198,7 +198,7 @@ class InitialScreen(QtWidgets.QWidget):
 
     def register_function(self):
         """Open the screen RegisterValues."""
-        from interface.screens.register_values import RegisterValuesScreen
+        from interface import RegisterValuesScreen
         self.open = RegisterValuesScreen()
         self.open.showFullScreen()
 
@@ -210,12 +210,12 @@ class InitialScreen(QtWidgets.QWidget):
 
     def graph_function(self):
         """Open the screen Graphic."""
-        from interface.screens.graphic import GraphicScreen
+        from interface import GraphicScreen
         self.open = GraphicScreen()
         self.open.showFullScreen()
 
     def delete_function(self):
         """Open the screen DeleteRegisters."""
-        from interface.screens.delete_registers import DeleteRegistersScreen
+        from interface import DeleteRegistersScreen
         self.open = DeleteRegistersScreen()
         self.open.showFullScreen()
