@@ -6,9 +6,9 @@ install:
   - pip install -r requirements.txt
 addons:
   sonarcloud:
-    organization: "igorbrehm-github" # the key of the org you chose at step #3
+    organization: "IgorBrehm_POTATO" # the key of the org you chose at step #3
     token:
-      secure: "3551c9d8c37f7fe71264d753bae0a3f902d8d690" # encrypted value of your token
+      secure: "432757e99dbde4464e0ad64e84204fc101f34c16" # encrypted value of your token
 script:
   - pytest
   - sonar-scanner
