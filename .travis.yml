@@ -10,5 +10,5 @@ addons:
     token:
       secure: "432757e99dbde4464e0ad64e84204fc101f34c16" # encrypted value of your token
 script:
-  - pytest
+  - pytest --junit-xml=batata.xml
   - sonar-scanner
