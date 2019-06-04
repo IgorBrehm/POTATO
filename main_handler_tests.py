@@ -30,14 +30,14 @@ def test_restore_cache_fail():
 
 
 def test_consult_profit():
-    assert main_handler.consult_profit() == ('0,00', '5', '2019')
+    assert main_handler.consult_profit() == ('0,00', '6', '2019')
 
 
 def test_consult_profit_x_month():
     result = main_handler.consult_profit_x_month()
     month = result[0]
     value = result[2]
-    assert month == ['Mai\n2019'] and value == '0,00'
+    assert month == ['Jun\n2019'] and value == '0,00'
 
 
 def test_drop_all():
