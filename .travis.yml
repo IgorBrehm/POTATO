@@ -10,7 +10,6 @@ addons:
     token:
       secure: "432757e99dbde4464e0ad64e84204fc101f34c16" # encrypted value of your token
 script:
-  - pytest --junit-xml=batata.xml
   - pytest --cov=main_executor_tests --cov-report xml
   - pytest --cov=main_handler_tests --cov-report xml --cov-append
   - sonar-scanner
