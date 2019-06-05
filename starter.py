@@ -2,7 +2,7 @@
 
 import sys
 from PyQt5 import QtWidgets
-from interface import InitialScreen
+from interface.screens.initial import InitialScreen
 from handler import main_handler
 
 
